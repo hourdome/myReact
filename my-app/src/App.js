@@ -3,6 +3,7 @@
 import logo from './logo.svg'
 import Header from './Components/Topbar'
 import ControlCard from './Components/ControlCard'
+import { Button, Card, CardContent } from '@mui/joy'
 
 export default function App() {
   const titleArray = ['Logistic', 'E-commerce', 'Banking']
@@ -16,11 +17,6 @@ export default function App() {
       {titleArray.map((eachTitleArray) => (
         <ControlCard title={eachTitleArray} />
       ))}
-      <div className='flex'>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
     </div>
   )
 }
